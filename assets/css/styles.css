@@ -318,24 +318,154 @@ img {
 .featured__preci{
   color: var(--dark-color-light);
   font-weight: var(--font-semi);
-  
 }
 
 /*===== OFFER =====*/
 
+.offer__bg {
+  background: url('/assets/img/offer.jpg') no-repeat center/cover;
+  text-align: center;
+}
+
+.offer__data{
+  padding: 3.5rem .25rem;
+  background: rgba(0,0,0,.5);
+  color: var(--white-color);
+
+}
+
+.offer__title{
+  font-size: var(--h2-font-size);
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  font-weight: var(--font-semi);
+}
+
+.offer__decription{
+  margin-bottom: var(--mb-2);
+  letter-spacing: .2rem;
+
+}
 
 /*===== NEW ARRIVALS =====*/
 
 
-/*===== NEWSLETTER =====*/
 
+/*===== NEWSLETTER =====*/
+.newsletter{
+  text-align: center;
+}
+
+.newsletter__discription{
+  margin-bottom: var(--mb-2);
+  font-size: var(--small-font-size);
+  color: var(--dark-color-light);
+}
+
+.newsletter__form{
+  display: grid;
+  grid-template-columns: 1fr .5fr;
+}
+
+.newsletter__input{
+  outline: none;
+  border: none;
+  background-color: var(--gray-color);
+  padding: 0 1rem;
+}
 
 /*===== SPONSORS =====*/
 
 
 /*===== FOOTER =====*/
+.footer{
+  background-color: var(--dark-color);
+  color: var(--white-color);
+}
+
+.footer__container{
+  row-gap: 1.5rem;
+  margin-bottom: var(--mb-4);
+}
+
+.footer__title{
+  margin-bottom: var(--mb-1);
+}
+
+.footer__deal{
+  margin-bottom: var(--mb-2);
+}
+
+.footer__store{
+  width: 100px;
+}
+
+.footer__link{
+  color: var(--dark-color-light);
+}
+
+.footer__link:hover{
+  text-decoration: underline;
+}
 
 
 /* ===== MEDIA QUERIES=====*/
 
+@media screen and (min-width: 768px){
+    body {
+      margin: 0;
+    }
 
+    .section-all{
+      margin-bottom: var(--mb-4);
+    }
+
+    .nav{
+      height: calc(var(--header-height) + 1rem);
+      justify-content: initial;
+    }
+
+    .nav__menu{
+      margin-left: auto;
+    }
+
+    .nav__list{
+      display: flex;
+    }
+
+    .nav__item{
+      margin-left: var(--mb-4);
+      margin-bottom: 0;
+    }
+
+    .nav__toggle{
+      display: none;
+    }
+
+    .home__container{
+      height: 100vh;
+    }
+
+    .home__data{
+      padding: 0;
+      height: max-content;
+      align-self: center;
+    }
+
+
+    
+
+    .home__img{
+      width: 370px;
+    }
+
+    .collection__container{
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: 1fr;
+    }
+
+    .featured__container{
+      grid-template-columns: repeat(4,1fr);
+    }
+
+}
